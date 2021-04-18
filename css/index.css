@@ -265,6 +265,22 @@ footer {
   justify-content: flex-end;
 }
 
+.footer-perfil {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #00001f, #e74c3c);
+  border-top: 2px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LI-profile-badge {
+  margin: 15px 0px;
+  border-radius: 5px;
+  border: 2px solid #777;
+}
+
 footer p {
   color: #fff;
   margin-top: 25px;
