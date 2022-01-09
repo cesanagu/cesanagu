@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin: 20px 20px 40px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.name {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0 0;
+}
+
+.social .fab {
+  font-size: 30px;
+}
+
+.personal-photo,
+.presentation-photo {
+  height: 215px;
+  margin: 0px 10px 15px;
+}
+
+.personal-photo {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.personal-photo .photo {
+  background-image: url("https://avatars.githubusercontent.com/u/42687714?v=4");
+}
+
+.presentation-photo .photo {
+  background-image: url("https://images.unsplash.com/photo-1453824979084-c8fd42932378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80");
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 25px;
+}
+
+.personal-info,
+.personal-info_intro p,
+.progress-bar-container p,
+.blogs-posts-container .post-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #828282;
+}
+
+.personal-info_details {
+  margin: 10px 0;
+}
+
+.name p:nth-child(1) {
+  font-weight: 600;
+  color: #4f4f4f;
+  font-size: 20px;
+}
+
+.mail,
+.phone {
+  display: flex;
+  margin-top: 5px;
+}
+
+.info span {
+  margin-right: 10px;
+  align-self: center;
+}
+
+.mail-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info_intro h2,
+.hobbies h2,
+.projects-container h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.personal-info_intro button {
+  padding: 12px;
+  border-radius: 15px;
+  border: solid 0.2px #999;
+  margin-bottom: 12px;
+}
+
+.info {
+  margin: 10px 0 20px;
+}
+
+.personal-info_intro p,
+.personal-info_introduction p {
+  margin-bottom: 15px;
+  padding: 0 5px;
+}
+
+.personal-info_introduction p {
+  margin-top: 20px;
+}
+
+/* BARS */
+.bars {
+  margin-top: 30px;
+}
+
+.progress-bar-container {
+  margin: 10px 0;
+}
+
+.progress-bar-container p {
+  margin: 2px 0;
+  padding-left: 5px;
+}
+
+.progress {
+  position: relative;
+  display: flex;
+  height: 15px;
+  width: 100%;
+  border: 5px solid #999;
+  border-radius: 15px;
+}
+
+.progress .color {
+  position: absolute;
+  background-color: #2f80ed;
+  width: 95%;
+  height: 5px;
+  border-radius: 15px;
+  animation: progres 2s linear;
+  align-self: center;
+}
+
+.js .progress .color,
+.canva .progress .color {
+  width: 80%;
+  animation: progres1 2s linear;
+}
+
+.react .progress .color {
+  width: 10%;
+  animation: progres2 2s linear;
+}
+
+.figma .progress .color {
+  width: 50%;
+  animation: progres3 2s linear;
+}
+
+@keyframes progres {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 65%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes progres1 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 35%;
+  }
+  50% {
+    width: 55%;
+  }
+  75% {
+    width: 65%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progres2 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 2%;
+  }
+  50% {
+    width: 5%;
+  }
+  75% {
+    width: 7%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes progres3 {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 10%;
+  }
+  50% {
+    width: 20%;
+  }
+  75% {
+    width: 37%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* BLOG */
+
+.blogs-posts-container {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.blogs-posts-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.blogs-button,
+.button-demo,
+.button-code {
+  border: 1px solid #47cfac;
+  padding: 10px 15px;
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-decoration: none;
+}
+
+.blogs-button:hover {
+  color: #fff;
+  background-color: #47cfac;
+  /* border-color: #000; */
+}
+
+.post-container {
+  /* height: 450px; */
+  position: relative;
+}
+
+.post-container p {
+  text-align: justify;
+}
+
+.post-container-img {
+  width: 100%;
+  height: 220px;
+  margin-top: 20px;
+}
+
+.blogs-posts-container .post-container p {
+  margin-bottom: 40px;
+  padding: 0 5px 60px;
+}
+
+.blogs-posts-container article:nth-child(3) p {
+  margin-bottom: 20px;
+}
+
+.blogs-posts-container .post-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.grid-container-blogs {
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px 25px;
+}
+
+/* BLOGPOSTS */
+
+.profile-link {
+  height: 40px;
+}
+
+.profile-link i {
+  margin: 15px 20px 0;
+  font-size: 40px;
+  color: #2f80ed;
+  position: fixed;
+}
+
+.blogpost-img-container {
+  padding: 30px 20px;
+  height: 400px;
+}
+
+.blogpost-img-container img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.blogpost-main-container {
+  padding: 10px 30px 30px;
+}
+
+.blogpost-main-container a {
+  color: blue;
+  text-decoration: none;
+}
+
+.blogpost-main-container h3 {
+  border-bottom: 1px solid #cdd2da;
+  /* padding-bottom: 20px; */
+}
+
+.blogpost-main-container iframe {
+  width: 100%;
+  height: 400px;
+  margin: 10px 0;
+}
+
+.blogpost-main-container img {
+  width: 100%;
+}
+
+.blogpost-main-container article h1,
+.blogpost-main-container article h2,
+.blogpost-main-container img {
+  margin: 15px 0;
+}
+
+.blogpost-main-container article h1 {
+  font-size: 30px;
+}
+
+.blogpost-main-container article p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.blogpost-main-container article li {
+  margin-bottom: 10px;
+}
+
+.blogpost-main-container article li,
+.blogpost-main-container article p,
+.blogpost-main-container a,
+.footer-blog a,
+q {
+  font-size: 18px;
+}
+
+q {
+  font-weight: 700;
+}
+
+.footer-blog a {
+  position: initial;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .blogpost-img-container {
+    height: 500px;
+  }
+
+  .blogpost-main-container article h1 {
+    font-size: 35px;
+  }
+
+  .blogpost-main-container article li,
+  .blogpost-main-container article p,
+  .blogpost-main-container a,
+  .footer-blog a,
+  q {
+    font-size: 22px;
+  }
+}
+
+/* HOBBIE */
+
+.hobbie-box {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  color: #000;
+  padding: 20px 10px;
+  margin: 20px 0;
+}
+
+.hobbie {
+  background-color: #fff;
+  opacity: 0.8;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.hobbie h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.first {
+  background-image: url("https://images.unsplash.com/photo-1597452485670-5f32106899c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80");
+}
+
+.second {
+  background-image: url("https://images.unsplash.com/photo-1560523964-7c0a83b8f8e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+}
+
+/* projects */
+
+.project {
+  margin: 60px 0;
+}
+
+.first-project {
+  margin-top: 10px;
+}
+
+.last-project {
+  margin-bottom: 20px;
+}
+
+.project-photo {
+  margin: 20px 0;
+}
+
+.project-photo img {
+  width: 100%;
+}
+
+.project-info span {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.project-info p {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-demo,
+.button-code {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.button-demo,
+.button-code,
+.blogs-button {
+  font-size: 18px;
+}
+
+.button-demo {
+  background-color: #2f80f6;
+  color: #fff;
+}
+
+@media screen and (min-width: 400px) {
+  .personal-photo,
+  .presentation-photo {
+    width: 60%;
+  }
+
+  .presentation-photo {
+    margin: 0 auto 15px;
+  }
+
+  .post-container-img {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .personal {
+    display: flex;
+  }
+
+  .personal-photo {
+    width: 80%;
+    margin: 15px;
+    align-self: center;
+  }
+
+  .name p:nth-child(1),
+  .project-info h3,
+  .hobbie h4,
+  .blogs-posts-container h3 {
+    font-size: 25px;
+  }
+
+  .mail,
+  .phone {
+    justify-content: center;
+  }
+
+  .mail-detail {
+    flex-direction: row;
+  }
+
+  .social .fab {
+    font-size: 35px;
+  }
+
+  .personal-info_introduction {
+    text-align: center;
+  }
+
+  .personal-info_introduction p {
+    padding: 0;
+  }
+
+  .bars-container {
+    display: flex;
+  }
+
+  .bars {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .personal-info_intro h2,
+  .hobbies h2,
+  .projects-container h2,
+  .blogs-posts-container h2 {
+    font-size: 30px;
+  }
+
+  .project-photo {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .project-photo img {
+    width: 80%;
+  }
+
+  .project-info {
+    padding: 0 80px;
+  }
+
+  .project-info p {
+    padding-bottom: 30px;
+  }
+
+  .project-info span {
+    font-size: 18px;
+  }
+
+  .project-info p,
+  .button-demo,
+  .button-code,
+  .blogs-button,
+  .hobbie p,
+  .personal-info {
+    font-size: 20px;
+  }
+
+  .presentation-photo {
+    width: 35%;
+    height: 250px;
+  }
+
+  .personal-info_intro p,
+  .progress-bar-container p,
+  .blogs-posts-container .post-container p {
+    font-size: 20px;
+  }
+
+  .personal-info_intro p {
+    padding: 0 45px;
+  }
+
+  .personal-info_intro button {
+    margin-left: 45px;
+    font-size: 15px;
+  }
+
+  .post-container {
+    padding: 0 40px;
+  }
+
+  .post-container-img {
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .blogs-button {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .hobbies {
+    padding: 10px 30px;
+  }
+
+  .hobbie-box {
+    padding: 50px 80px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .personal-photo {
+    width: 65%;
+    height: 300px;
+  }
+
+  .post-container-img {
+    width: 50%;
+  }
+}
