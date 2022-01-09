@@ -28,6 +28,7 @@ body {
 
 .social .fab {
   font-size: 30px;
+  color: #828282;
 }
 
 .personal-photo,
@@ -62,7 +63,7 @@ body {
 .personal-info_intro p,
 .progress-bar-container p,
 .blogs-posts-container .post-container p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #828282;
 }
